@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            html blokai
+        </title>
+        <style>
+            .container {
+                height:75vw;
+                width:100vw;
+                background:lightblue;
+            }            
+            .block {
+                height:25vw;
+                width:25vw;
+                background:blue;
+                margin-left:0;
+                margin-top:0;
+            }         
+            .block + .block {
+                margin-top:2vh;
+            }            
+            .stroked {
+                border: 2vh solid black;
+                margin-top: 5vh;
+            }
+            .rectangle {
+                margin-top: 5vh;
+                width:60vw;
+                height:25vw;
+                border: none;
+                background: purple;
+            }
+            .rectangle div:first-child {
+                background:red;
+            }
+            .rectangle.stroked {
+                background: yellow;
+            }
+            .rectangle.stroked:hover {
+                background: black;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="block"></div>
+            <div class="block"></div>
+        </div>
+        <div class="block stroked"></div>
+        <div class="rectangle">
+            <div class="block"></div>
+        </div>
+        <div class="rectangle stroked"></div>
+    </body>
+</html>
